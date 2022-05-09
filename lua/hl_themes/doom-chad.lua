@@ -1,6 +1,4 @@
-local M = {}
-
-M.base_30 = {
+local colors = {
    white = "#bbc2cf",
    darker_black = "#22262e",
    black = "#282c34", --  nvim bg
@@ -34,25 +32,4 @@ M.base_30 = {
    folder_bg = "#51afef",
 }
 
-M.base_16 = {
-   base00 = "#282c34",
-   base01 = "#32363e",
-   base02 = "#3c4048",
-   base03 = "#4e525a",
-   base04 = "#5a5e66",
-   base05 = "#a7aebb",
-   base06 = "#b3bac7",
-   base07 = "#bbc2cf",
-   base08 = "#ff6c6b",
-   base09 = "#da8548",
-   base0A = "#ECBE7B",
-   base0B = "#98be65",
-   base0C = "#66c4ff",
-   base0D = "#48a6e6",
-   base0E = "#9c94d4",
-   base0F = "#c85a50",
-}
-
-M = require("base46").override_theme(M, "doomchad")
-
-return M
+return colors
